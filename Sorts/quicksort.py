@@ -1,6 +1,6 @@
 from random import shuffle
 
-def quik_sort(lst: list, low, high):
+def quick_sort(lst: list, low, high):
     if low < high:
         pivot = low
         i = low
@@ -21,8 +21,8 @@ def quik_sort(lst: list, low, high):
 
         lst[j], lst[pivot] = lst[pivot], lst[j]
 
-        quik_sort(lst, low, j-1)
-        quik_sort(lst, j+1, high)
+        quick_sort(lst, low, j-1)
+        quick_sort(lst, j+1, high)
 
     return lst
 
@@ -30,4 +30,4 @@ test_list = [i for i in range(0, 10)]
 shuffle(test_list)
 
 print(test_list)
-print(quik_sort(test_list, 0, len(test_list)-1))
+print(quick_sort(test_list, 0, len(test_list)-1))
