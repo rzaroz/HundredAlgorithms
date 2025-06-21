@@ -13,6 +13,9 @@ def insertion_sort(lst: list):
 
 test_lst = np.random.randn(10) * 10
 test_lst = test_lst.tolist()
+
+print("Before:")
 print(test_lst)
 result = insertion_sort(test_lst)
+print("After:")
 print(result)
