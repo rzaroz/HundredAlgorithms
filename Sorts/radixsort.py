@@ -2,7 +2,7 @@ import time
 from random import shuffle
 
 start_time = time.perf_counter()
-def counting_sort(lst, exp):
+def counting_sort_radix(lst, exp):
     n = len(lst)
     count = [0] * 10
     output = [0] * n
@@ -30,7 +30,7 @@ def radix_sort(lst):
 
     exp = 1
     while max_num // exp > 0:
-        counting_sort(lst, exp)
+        counting_sort_radix(lst, exp)
         exp *= 10
 
 

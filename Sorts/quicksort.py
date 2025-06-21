@@ -1,4 +1,7 @@
+import time
 from random import shuffle
+
+start_time = time.perf_counter()
 
 def quick_sort(lst: list, low, high):
     if low < high:
@@ -31,3 +34,8 @@ shuffle(test_list)
 
 print(test_list)
 print(quick_sort(test_list, 0, len(test_list)-1))
+end_time = time.perf_counter()
+
+elapsed_time = end_time - start_time
+print(f"Code execution time: {elapsed_time:.6f} seconds")
+print(test_list)
