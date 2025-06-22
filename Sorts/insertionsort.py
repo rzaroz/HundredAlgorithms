@@ -1,4 +1,7 @@
-import numpy as np
+import time
+import random
+from random import shuffle
+start_time = time.perf_counter()
 
 def insertion_sort(lst: list):
 
@@ -11,11 +14,13 @@ def insertion_sort(lst: list):
 
     return lst
 
-test_lst = np.random.randn(10) * 10
-test_lst = test_lst.tolist()
+test_lst = [i for i in range(100)]
+shuffle(test_lst)
 
 print("Before:")
 print(test_lst)
-result = insertion_sort(test_lst)
 print("After:")
-print(result)
+insertion_sort(test_lst)
+done = time.perf_counter() - start_time
+print(f"Code execution time: {done:.6f} seconds")
+print(test_lst)

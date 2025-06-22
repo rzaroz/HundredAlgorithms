@@ -1,5 +1,9 @@
+import time
 import random
 from random import shuffle
+
+start_time = time.perf_counter()
+
 
 random.seed(42)
 
@@ -29,4 +33,6 @@ print("Before:")
 print(test_lst)
 print("After:")
 shell_sort(test_lst)
+done = time.perf_counter() - start_time
+print(f"Code execution time: {done:.6f} seconds")
 print(test_lst)
