@@ -27,8 +27,8 @@ Welcome to **HundredAlgorithm**! This repo aims to collect 100 unique algorithms
 - Use or contribute to the code!
 
 ## How to Use 🛠️
-- Clone: `git clone https://github.com/rzaroz/HundredAlgorithm.git`
-- Navigate: `cd HundredAlgorithm`
+- Clone: `git clone https://github.com/rzaroz/HundredAlgorithms.git`
+- Navigate: `cd HundredAlgorithms`
 - Run: `python binarysearch.py`
 
 Happy coding! 👨‍💻👩‍💻
