@@ -9,6 +9,7 @@ Welcome to **HundredAlgorithm**! This repo aims to collect 100 unique algorithms
   - Jump
   - Linear
   - Ternary
+  - Fibonachi
 - **Sort**
   - Bubble
   - Bucket
