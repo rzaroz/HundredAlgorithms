@@ -21,7 +21,7 @@ Welcome to **HundredAlgorithm**! This repo aims to collect 100 unique algorithms
   - Radix
   - Selection
   - Shell
-- **Search**
+- **Graph**
   - SampleGraph (Creating a random graph based on the number of vertices)
   - Dijkstra
 
